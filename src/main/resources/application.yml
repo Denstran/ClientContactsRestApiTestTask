@@ -1,0 +1,17 @@
+spring:
+  application:
+    name:
+      ClientContactsRestApiTestTask
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: postgresql
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/TestClientContactApiDb
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update
